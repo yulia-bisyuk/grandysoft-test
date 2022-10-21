@@ -1,11 +1,11 @@
 {
-  "name": "grandysoft-test",
+  "name": "simple-drawings",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://yulia-bisyuk.github.io/grandysoft-test",
+  "homepage": "https://yulia-bisyuk.github.io/gsimple-drawings",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /grandysoft-test/"
+    "build": "parcel build src/*.html --public-url /simple-drawings/"
   },
   "repository": {
     "type": "git",
