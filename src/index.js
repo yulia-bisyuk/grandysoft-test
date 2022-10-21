@@ -90,7 +90,7 @@ function calculateIntersection(p1, p2, p3, p4) {
   let d = c3x * c2y - c3y * c2x;
 
   if (d == 0) {
-    throw new Error('Number of intersection points is zero or infinity.');
+    console.log('Number of intersection points is zero or infinity.');
   }
 
   let u1 = p1.x * p2.y - p1.y * p2.x;
