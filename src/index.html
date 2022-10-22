@@ -1,31 +1,42 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Test</title>
+    <title>SimpleDrawings</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
   </head>
-  <body style="padding: 30px">
-    <canvas
-      id="canvas"
-      width="600"
-      height="400"
-      style="border: 1px solid coral"
-    ></canvas>
-    <button
-      type="button"
-      id="collapse"
-      style="
-        display: block;
-        color: coral;
-        border-radius: 0px;
-        border: 1px solid coral;
-        background-color: white;
-      "
-    >
-      collapse lines
-    </button>
+  <body>
+    <section class="container">
+      <canvas id="canvas" class="canvas" width="600" height="400"></canvas>
+      <div class="toolbar">
+        <label class="input-label"
+          >Color
+          <input
+            name="color"
+            id="color"
+            type="color"
+            class="input color-input"
+            value="#808080"
+          />
+        </label>
+
+        <label class="input-label"
+          >Line Width
+          <input
+            name="lineWidth"
+            id="lineWidth"
+            type="range"
+            value="5"
+            class="input line-width-input"
+          />
+        </label>
+        <button type="button" id="collapse" class="button">
+          Clear drawings
+        </button>
+      </div>
+    </section>
   </body>
 </html>

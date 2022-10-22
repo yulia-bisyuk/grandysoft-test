@@ -1,0 +1,43 @@
+.toolbar {
+  width: 600px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.button {
+  display: block;
+  padding: 12px 14px;
+  color: $primary-coral;
+  border-radius: 0px;
+  border: 1px solid $primary-coral;
+  border-radius: $border-radius;
+  background-color: white;
+  cursor: pointer;
+
+  &:hover {
+    color: white;
+    background-color: $primary-coral;
+  }
+}
+
+.input-label {
+  display: flex;
+  align-items: center;
+  color: $primary-coral;
+}
+
+.input {
+  margin-left: 10px;
+}
+
+.color-input {
+  width: 100px;
+  background-color: white;
+  border-color: $primary-coral;
+  border-radius: $border-radius;
+}
+
+.line-width-input {
+  color: $gray;
+}
